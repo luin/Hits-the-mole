@@ -1,0 +1,85 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1")
+    title 打呀打地鼠
+    link(rel="stylesheet", href="css/game.css")
+  body
+    #container
+      input#startFlag(type='checkbox')
+      #start.window
+        h1 打呀打地鼠
+        p 不许笑，一个严肃的 CSS 游戏
+        .btn-group
+          .gopher.gopher--not-button
+          label(for="startFlag") 开始
+      #end.window
+        h2 Game Over
+        p 壮士欢迎从头再来
+        p.meta 按 F5/Command R 重来
+        .gopher.gopher--not-button
+      .time-wrapper
+        p 游戏时间：
+        .time
+          .progress
+      #map
+        - var i = 20
+        - while (--i)
+          .map
+      .holes
+        .group
+          input.gopher.gopher1(type="radio", name="target1")
+          input.gopher.gopher2(type="radio", name="target2")
+          .hole
+        .group
+          input.gopher.gopher3(type="radio", name="target3")
+          .hole
+        .group
+          input.gopher.gopher4(type="radio", name="target4")
+          input.gopher.gopher5(type="radio", name="target5")
+          input.gopher.gopher6(type="radio", name="target6")
+          .hole
+        .group
+          input.gopher.gopher7(type="radio", name="target7")
+          input.gopher.gopher8(type="radio", name="target8")
+          .hole
+        .group
+          input.gopher.gopher9(type="radio", name="target9")
+          input.gopher.gopher10(type="radio", name="target10")
+          .hole
+        .group
+          input.gopher.gopher11(type="radio", name="target11")
+          input.gopher.gopher12(type="radio", name="target12")
+          .hole
+      .points
+        .points-viewport
+          .points-list
+            input(type="radio", checked, name="target1")
+            input(type="radio", checked, name="target2")
+            input(type="radio", checked, name="target3")
+            input(type="radio", checked, name="target4")
+            input(type="radio", checked, name="target5")
+            input(type="radio", checked, name="target6")
+            input(type="radio", checked, name="target7")
+            input(type="radio", checked, name="target8")
+            input(type="radio", checked, name="target9")
+            input(type="radio", checked, name="target10")
+            input(type="radio", checked, name="target11")
+            input(type="radio", checked, name="target12")
+            ul.points-value
+              li 12
+              li 11
+              li 10
+              li 9
+              li 8
+              li 7
+              li 6
+              li 5
+              li 4
+              li 3
+              li 2
+              li 1
+              li 0
+

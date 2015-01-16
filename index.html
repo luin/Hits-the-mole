@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <title>打呀打地鼠</title>
+    <link rel="stylesheet" href="css/game.css">
+  </head>
+  <body>
+    <div id="container">
+      <input id="startFlag" type="checkbox">
+      <div id="start" class="window">
+        <h1>打呀打地鼠</h1>
+        <p>不许笑，一个严肃的 CSS 游戏</p>
+        <div class="btn-group">
+          <div class="gopher gopher--not-button"></div>
+          <label for="startFlag">开始</label>
+        </div>
+      </div>
+      <div id="end" class="window">
+        <h2>Game Over</h2>
+        <p>壮士欢迎从头再来</p>
+        <p class="meta">按 F5/Command R 重来</p>
+        <div class="gopher gopher--not-button"></div>
+      </div>
+      <div class="time-wrapper">
+        <p>游戏时间：</p>
+        <div class="time">
+          <div class="progress"></div>
+        </div>
+      </div>
+      <div id="map">
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+        <div class="map"></div>
+      </div>
+      <div class="holes">
+        <div class="group">
+          <input type="radio" name="target1" class="gopher gopher1">
+          <input type="radio" name="target2" class="gopher gopher2">
+          <div class="hole"></div>
+        </div>
+        <div class="group">
+          <input type="radio" name="target3" class="gopher gopher3">
+          <div class="hole"></div>
+        </div>
+        <div class="group">
+          <input type="radio" name="target4" class="gopher gopher4">
+          <input type="radio" name="target5" class="gopher gopher5">
+          <input type="radio" name="target6" class="gopher gopher6">
+          <div class="hole"></div>
+        </div>
+        <div class="group">
+          <input type="radio" name="target7" class="gopher gopher7">
+          <input type="radio" name="target8" class="gopher gopher8">
+          <div class="hole"></div>
+        </div>
+        <div class="group">
+          <input type="radio" name="target9" class="gopher gopher9">
+          <input type="radio" name="target10" class="gopher gopher10">
+          <div class="hole"></div>
+        </div>
+        <div class="group">
+          <input type="radio" name="target11" class="gopher gopher11">
+          <input type="radio" name="target12" class="gopher gopher12">
+          <div class="hole"></div>
+        </div>
+      </div>
+      <div class="points">
+        <div class="points-viewport">
+          <div class="points-list">
+            <input type="radio" checked name="target1">
+            <input type="radio" checked name="target2">
+            <input type="radio" checked name="target3">
+            <input type="radio" checked name="target4">
+            <input type="radio" checked name="target5">
+            <input type="radio" checked name="target6">
+            <input type="radio" checked name="target7">
+            <input type="radio" checked name="target8">
+            <input type="radio" checked name="target9">
+            <input type="radio" checked name="target10">
+            <input type="radio" checked name="target11">
+            <input type="radio" checked name="target12">
+            <ul class="points-value">
+              <li>12</li>
+              <li>11</li>
+              <li>10</li>
+              <li>9</li>
+              <li>8</li>
+              <li>7</li>
+              <li>6</li>
+              <li>5</li>
+              <li>4</li>
+              <li>3</li>
+              <li>2</li>
+              <li>1</li>
+              <li>0</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
